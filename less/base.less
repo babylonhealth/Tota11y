@@ -1,0 +1,86 @@
+/**
+ * Base styles for tota11y to make sure things look consistent under
+ * reasonable circumstances.
+ */
+
+@import "variables.less";
+
+@font-face {
+	font-family: 'visuelt';
+	src:  url('https://www.babylonhealth.com/assets/fonts/visuelt-regular.woff2') format('woff2'),
+		  url('https://www.babylonhealth.com/assets/fonts/visuelt-regular.woff') format('woff');
+  }
+
+.tota11y {
+    // A reset of all styles in tota11y elements
+    &, & * {
+        border: none;
+        background-color: inherit;
+        box-sizing: border-box;
+        color: black;
+        font-family: visuelt, Arial, Helvetica, sans-serif;
+        font-size: @fontSize;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.35;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        text-shadow: none;
+    }
+
+    // This applies to all styles within .tota11y, meaning it excludes items
+    // like annotations
+    & * {
+        height: auto;
+        width: auto;
+    }
+
+    strong {
+        font-weight: bold;
+    }
+
+    // Some normalized styles for specific elements we use in tota11y
+    pre, code {
+
+        border: none;
+        border-radius: 0;
+        color: inherit;
+        font-family: monospace;
+        font-size: inherit;
+        line-height: inherit;
+    }
+
+    pre {
+        padding: 5px 10px;
+        margin: 0 0 10px;
+        overflow-x: scroll;
+    }
+
+    code {
+        border-radius: 2px;
+        display: inline;
+        padding: 1px;
+    }
+
+    i,
+    em {
+        font-style: italic;
+    }
+
+    p {
+        margin: 0 0 10px;
+    }
+
+    a  {
+        background-color: inherit;
+        color:#400099; // Babylon purple
+        text-decoration: underline;
+	}
+
+	a:hover, a:focus {text-decoration:none;}
+	a:visited {text-decoration: underline;}
+
+}
+
+

@@ -1,0 +1,94 @@
+@import "variables.less";
+@import "base.less";
+
+@togglePadding: 7px;
+@toggleCollapsedWidth: 35px;
+@toggleHeight: 25px;
+
+.tota11y-toolbar {
+  .tota11y-dark-color-scheme;
+  .position(fixed, auto, auto, 0, @viewportEdgePadding);
+
+  border: 2px solid #400099;
+  border-radius: 8px 8px 0px 0px;
+  /* make it scrollable vertically at 200% zoom */
+  overflow: scroll;
+  max-height: 95%;
+  /* end hack */
+  z-index: @z-index--UI;
+
+  &-toggle {
+    background-color: @babylonPurple;
+    display: block;
+    padding: @togglePadding;
+    width: 100%;
+    border: 2px solid #400099;
+    border-radius: 8px 8px 0px 0px;
+  }
+
+  &-logo {
+    height: @toggleHeight;
+    margin: 0 auto;
+    text-align: center;
+    width: @toggleCollapsedWidth;
+
+    & svg {
+      height: @toggleHeight;
+    }
+  }
+
+  &-body {
+    display: none;
+  }
+  &.tota11y-expanded &-body {
+    display: block;
+  }
+}
+
+.tota11y-sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.tota11y-info {
+  border: 2px solid #400099;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.04), 6px 4px 11px rgba(0, 0, 0, 0.2);
+  border-radius: 8px 8px 0px 0px;
+  background-color: white;
+}
+
+#tota11y-toolbar:not([aria-expanded="true"]) {
+  border: 2px solid #ffffff;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.04), 6px 4px 11px rgba(0, 0, 0, 0.2);
+}
+
+/* over-rides n shizz */
+
+.tota11y-label:hover {
+  outline: 1px red solid;
+  z-index: 9999;
+}
+
+.tota11y-expanded .tota11y-toolbar-toggle {
+  border-radius: 0;
+}
+
+li.tota11y-plugin {
+  border-bottom: none;
+}
+
+.tota11y-info-section.active {
+  background-color: #f3f6f9;
+  border-radius: 4px;
+}
+
+.tota11y-info-error-chevron {
+  color: @babylonPurple;
+  font-size: large;
+}
