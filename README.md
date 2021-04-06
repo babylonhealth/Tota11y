@@ -2,7 +2,7 @@
 
 An accessibility visualization toolkit.
 
-To install it, plase drag this link to your browser's bookmark bar: <a href="javascript:(function()%7Bvar tota11y%3Ddocument.createElement(%27SCRIPT%27)%3Btota11y.type%3D%27text/javascript%27%3Btota11y.src%3D%27https://github.com/babylonhealth/Tota11y/blob/main/dist/tota11y.min.js%27%3Bdocument.getElementsByTagName(%27head%27)%5B0%5D.appendChild(tota11y)%3B%7D)()%3B">Tota11y!</a>
+To install it, plase drag this link to your browser's bookmark bar: [Tota11y!]("javascript:(function()%7Bvar tota11y%3Ddocument.createElement(%27SCRIPT%27)%3Btota11y.type%3D%27text/javascript%27%3Btota11y.src%3D%27https://github.com/babylonhealth/Tota11y/blob/main/dist/tota11y.min.js%27%3Bdocument.getElementsByTagName(%27head%27)%5B0%5D.appendChild(tota11y)%3B%7D)()%3B")
 
 
 
