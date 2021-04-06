@@ -1,8 +1,8 @@
 # tota11y [![Build Status](https://travis-ci.org/Khan/tota11y.svg?branch=master)](https://travis-ci.org/Khan/tota11y)
 
-An accessibility visualization toolkit
+An accessibility visualization toolkit.
 
-<img src="http://khan.github.io/tota11y/img/tota11y-logo.png" alt="tota11y logo" width="200">
+Drag this link into your bookmarks bar: [Tota11y!](javascript:(function()%7Bvar tota11y%3Ddocument.createElement(%27SCRIPT%27)%3Btota11y.type%3D%27text/javascript%27%3Btota11y.src%3D%27https://github.com/babylonhealth/Tota11y/blob/main/dist/tota11y.min.js%27%3Bdocument.getElementsByTagName(%27head%27)%5B0%5D.appendChild(tota11y)%3B%7D)()%3B)
 
 [Try tota11y in your browser](http://khan.github.io/tota11y/#Try-it), or
 [read why we built tota11y](http://engineering.khanacademy.org/posts/tota11y.htm).
@@ -40,18 +40,6 @@ and even handlebars. [Here's what the simple LandmarksPlugin looks like](https:/
 tota11y uses a variety of technologies, including [jQuery](https://jquery.com/), [webpack](https://webpack.github.io/), [babel](https://babeljs.io/), and [JSX](https://facebook.github.io/jsx/). **There's no need to know all (or any!) of these to contribute to tota11y, but we hope tota11y is a good place to learn something new and interesting.**
 
 ## Testing
-
-You can run unit tests on tota11y with the following:
-
-```bash
-npm test
-```
-
-Or lint with:
-
-```bash
-npm run lint
-```
 
 To perform manual testing as you work, you can run a live dev-server with the
 following:
