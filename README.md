@@ -1,13 +1,10 @@
-# tota11y [![Build Status](https://travis-ci.org/Khan/tota11y.svg?branch=master)](https://travis-ci.org/Khan/tota11y)
+# An accessibility visualization toolkit.
 
-An accessibility visualization toolkit.
-
+Drag this link to your browser's bookmarks bar.
 
 <a class="bookmarklet" href="javascript:(function(){var%20tota11y=document.createElement('SCRIPT');tota11y.type='text/javascript';tota11y.src='https://khan.github.io/tota11y/dist/tota11y.min.js';document.getElementsByTagName('head')[0].appendChild(tota11y);})();" onclick="javascript:return false;">tota11y</a>
 
-
-[Try tota11y in your browser](http://khan.github.io/tota11y/#Try-it), or
-[read why we built tota11y](http://engineering.khanacademy.org/posts/tota11y.htm).
+This is a fork of the original [Tota11y from Khan Academy](http://khan.github.io/tota11y/), by Babylon Health. Inspired by [why Khan Academy built tota11y](http://engineering.khanacademy.org/posts/tota11y.htm), some of the functionality has been updated or tweaked to reflect the needs of Babylon's web developers.
 
 ## Installation
 
@@ -41,14 +38,6 @@ and even handlebars. [Here's what the simple LandmarksPlugin looks like](https:/
 
 tota11y uses a variety of technologies, including [jQuery](https://jquery.com/), [webpack](https://webpack.github.io/), [babel](https://babeljs.io/), and [JSX](https://facebook.github.io/jsx/). **There's no need to know all (or any!) of these to contribute to tota11y, but we hope tota11y is a good place to learn something new and interesting.**
 
-## Testing
-
-To perform manual testing as you work, you can run a live dev-server with the
-following:
-
-```bash
-npm start
-```
 
 ## Building
 
@@ -84,9 +73,7 @@ Want to integrate tota11y into your site, but don't know where to start? Here ar
 
 ## Special thanks
 
-Many of tota11y's features come straight from [Google Chrome's Accessibility Developer Tools](https://github.com/GoogleChrome/accessibility-developer-tools). We use this library heavily at [Khan Academy](http://khanacademy.org).
-
-The awesome glasses in our logo were created by [Kyle Scott](https://thenounproject.com/Kyle/) and are licensed under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/us/legalcode).
+Many of tota11y's features come straight from [Google Chrome's Accessibility Developer Tools](https://github.com/GoogleChrome/accessibility-developer-tools). 
 
 ## License
 
