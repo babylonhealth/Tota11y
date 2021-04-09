@@ -17,14 +17,14 @@ This is a fork of the original [Tota11y from Khan Academy](http://khan.github.io
 
 ### Screenreader wand
 
-- change the name of screenreader wand, which over-promises (screen readers given other info on form fields, e.g. required)
+- change the name of screenreader wand, which over-promises (screen readers often give other info on form fields, e.g. required)
 - added exposure of value attribute on input type=submit fields (as that is what gets exposed and wasn't being reported). 
-- Add value of aria-describedby attributes as that is also passed to AT, especially as hints/ instructions on form fields.
+- Add value of aria-describedby attributes as that is also passed to AT, especially as [hints/ instructions on form fields](https://www.tpgi.com/using-aria-describedby-to-provide-helpful-form-hints/).
 
 ### Contrast checker
 
-- stop contrast checker grumbling about transparent (therefore, invisible) text, eg on Amazon, Guardian).  
-- don't check text 'visually hidden' using the common clip pattern which we use in Babylon. (Naive test).
+- stop contrast checker grumbling about transparent (therefore, invisible) text, eg on Amazon, Guardian.  
+- don't check text 'visually hidden' using the common [clip pattern](https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/) which we use in Babylon. (It's a very naive test).
 - Correct calculation of contrast ratio in the contrast module to take account of boldness of text and not just rely on font-size. (Thanks Mozilla dev tools!). Added MPL license.
 
 ### Alt text checker
@@ -33,11 +33,12 @@ Tweaked img/alt module to ask users to check accuracy of alt text (rather than p
 
 ### Empty elements plugin added
 
-Add tests for empty nav, header, main, aside, footer, figcaption elements These could be announced to screen reader users (but will be empty) and justifiably make people  grumpy.
+- Add tests for empty nav, header, main, aside, footer, figcaption elements These could be announced to screen reader users (but will be empty) and justifiably make people grumpy. 
+- Empty p and multiple br elements give a warning, as they may indicate shonky CSS but aren't a disaster for a11y.
 
 ### Title attributes plugin added
 
-New Titles module to show missing titles on iframes (error), and warnings for superfluous titles on other things erroneously put there to placate the false idols of Search Engine Optimists (see The Trials and Tribulations of the Title Attribute)
+New Titles module to show missing titles on iframes (error), and warnings for superfluous titles on other things erroneously put there to placate the false idols of Search Engine Optimists (see [The Trials and Tribulations of the Title Attribute](https://www.24a11y.com/2017/the-trials-and-tribulations-of-the-title-attribute/))
 
 ### Landmarks and roles plugin added
 
@@ -98,7 +99,7 @@ Want to integrate tota11y into your site, but don't know where to start? Here ar
 
 ## Special thanks
 
-Many of tota11y's features come straight from [Google Chrome's Accessibility Developer Tools](https://github.com/GoogleChrome/accessibility-developer-tools). Some of the logic for the Babylon revamp of the contrast checker (specifically, deciding if bold text is 'large' enough to need a 3:1 contrast ratio rather than 4.5:1) is adapted from Mozilla dev tools, under the MPL2 license.
+Many of tota11y's features come straight from [Google Chrome's Accessibility Developer Tools](https://github.com/GoogleChrome/accessibility-developer-tools). Some of the logic for the Babylon revamp of the contrast checker (specifically, deciding if bold text is 'large' enough to need a 3:1 contrast ratio rather than 4.5:1) is adapted from [Mozilla dev tools](https://searchfox.org/mozilla-central/source/devtools/shared/accessibility.js#23), under the MPL2 license.
 
 ## License
 
