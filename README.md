@@ -6,6 +6,43 @@ Drag this link to your browser's bookmarks bar.
 
 This is a fork of the original [Tota11y from Khan Academy](http://khan.github.io/tota11y/), by Babylon Health. Inspired by [why Khan Academy built tota11y](http://engineering.khanacademy.org/posts/tota11y.htm), some of the functionality has been updated or tweaked to reflect the needs of Babylon's web developers.
 
+## New Features
+
+### UI changes
+- When hovering over a tota11y label, max its z-index in case it is obscured by a nearby label in busy pages.
+- Make the menu responsive when screen is zoomed to 200%
+- Split out modules into most-common one for content editors, and 'developers' (e.g. those with control over HTML blocks and form fields)
+- Add links to Babylon DNA guidance where applicable
+- redesigned UI to be white background, easier to see against cookie banners etc
+
+### Screenreader wand
+
+- change the name of screenreader wand, which over-promises (screen readers given other info on form fields, e.g. required)
+- added exposure of value attribute on input type=submit fields (as that is what gets exposed and wasn't being reported). 
+- Add value of aria-describedby attributes as that is also passed to AT, especially as hints/ instructions on form fields.
+
+### Contrast checker
+
+- stop contrast checker grumbling about transparent (therefore, invisible) text, eg on Amazon, Guardian).  
+- don't check text 'visually hidden' using the common clip pattern which we use in Babylon. (Naive test).
+- Correct calculation of contrast ratio in the contrast module to take account of boldness of text and not just rely on font-size. (Thanks Mozilla dev tools!). Added MPL license.
+
+### Alt text checker
+
+Tweaked img/alt module to ask users to check accuracy of alt text (rather than perhaps falsely-reassure that presence of alt text is actually useful or related to the image)
+
+### Empty elements plugin added
+
+Add tests for empty nav, header, main, aside, footer, figcaption elements These could be announced to screen reader users (but will be empty) and justifiably make people  grumpy.
+
+### Title attributes plugin added
+
+New Titles module to show missing titles on iframes (error), and warnings for superfluous titles on other things erroneously put there to placate the false idols of Search Engine Optimists (see The Trials and Tribulations of the Title Attribute)
+
+### Landmarks and roles plugin added
+
+New module to expose HTML5 landmarks (footer, header etc) and  ARIA roles that have been explicitly set (but not those that are implicit, because that's not as useful for diagnosing coder errors)
+
 ## Installation
 
 `npm install @khanacademy/tota11y`
