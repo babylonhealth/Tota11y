@@ -9,15 +9,15 @@ This is a fork of the original [Tota11y from Khan Academy](http://khan.github.io
 ## New Features
 
 ### UI changes
-- When hovering over a tota11y label, max its z-index in case it is obscured by a nearby label in busy pages.
-- Make the menu responsive when screen is zoomed to 200%
-- Split out modules into most-common one for content editors, and 'developers' (e.g. those with control over HTML blocks and form fields)
+- When hovering over a tota11y label, bump upits z-index in case it is obscured by a nearby label in busy pages.
+- Make Tota11y responsive when screen is zoomed to 200%
+- Split out modules into most-common ones for content editors, and those for 'developers' (e.g. people with control over HTML blocks and form fields)
 - Add links to Babylon DNA guidance where applicable
-- redesigned UI to be white background, easier to see against cookie banners etc
+- Redesigned UI to be white background, easier to see against cookie banners etc
 
 ### Screenreader wand
 
-- change the name of screenreader wand, which over-promises (screen readers often give other info on form fields, e.g. required)
+- change the name of screenreader wand, which over-promises (screen readers often give other info about form fields, e.g. required). Don't want to suggest that Tota11y replaces testing with Assistive Technologies.
 - added exposure of value attribute on input type=submit fields (as that is what gets exposed and wasn't being reported). 
 - Add value of aria-describedby attributes as that is also passed to AT, especially as [hints/ instructions on form fields](https://www.tpgi.com/using-aria-describedby-to-provide-helpful-form-hints/).
 
@@ -40,19 +40,9 @@ Tweaked img/alt module to ask users to check accuracy of alt text (rather than p
 
 New Titles module to show missing titles on iframes (error), and warnings for superfluous titles on other things erroneously put there to placate the false idols of Search Engine Optimists (see [The Trials and Tribulations of the Title Attribute](https://www.24a11y.com/2017/the-trials-and-tribulations-of-the-title-attribute/))
 
-### Landmarks and roles plugin added
+### Landmarks and roles plugin 
 
-New module to expose HTML5 landmarks (footer, header etc) and  ARIA roles that have been explicitly set (but not those that are implicit, because that's not as useful for diagnosing coder errors)
-
-## Installation
-
-`npm install @khanacademy/tota11y`
-
-Include it right before `</body>` like so:
-
-```html
-<script src="tota11y.min.js"></script>
-```
+Added functionality to expose HTML5 landmarks (footer, header etc, shown in CAPITALS) and  ARIA roles that have been explicitly set (but not those that are implicit, because that's not as useful for diagnosing coder errors). And it's hard to deduce them as the platform doesn't have a getComputedRole method, which is criminal, but there we are.
 
 ## Development
 
