@@ -1,17 +1,17 @@
 {
-  "name": "@khanacademy/tota11y",
-  "version": "0.2.0",
+  "name": "@babylon/tota11y",
+  "version": "1.0.0",
   "description": "An accessibility visualization toolkit",
   "main": "dist/tota11y.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Khan/tota11y.git"
+    "url": "https://github.com/babylonhealth/Tota11y"
   },
   "author": "Jordan Scales <scalesjordan@gmail.com>",
   "contributors": [
     "Jeff Yates <jeff.yates@alumni.manchester.ac.uk"
   ],
-  "homepage": "https://khan.github.io/tota11y/",
+  "homepage": "hhttps://github.com/babylonhealth/Tota11y",
   "devDependencies": {
     "accessibility-developer-tools": "2.11.0",
     "autoprefixer": "^6.5.3",
@@ -23,7 +23,7 @@
     "clean-webpack-plugin": "^2.0.1",
     "css-loader": "^2.1.1",
     "eslint": "^5.15.2",
-    "handlebars": "^4.1.2",
+    "handlebars": "^4.7.7",
     "handlebars-loader": "^1.7.1",
     "jquery": "^3.4.0",
     "jsdom": "^8.1.0",
@@ -37,7 +37,7 @@
     "uglifyjs-webpack-plugin": "^2.1.2",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.0",
-    "webpack-dev-server": "^3.3.1"
+    "webpack-dev-server": "^3.11.2"
   },
   "publishConfig": {
     "access": "public"
@@ -50,6 +50,6 @@
     "start": "webpack-dev-server --config webpack.config.babel.js --hot --inline",
     "prepublishOnly": "node ./utils/pre-publish-checks.js && git diff --stat --exit-code HEAD && npm test && npm run build:prod"
   },
-  "license": "MIT",
+  "license": "MIT AND MPL-2.0 AND Apache-2.0",
   "dependencies": {}
 }
