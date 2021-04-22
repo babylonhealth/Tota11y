@@ -1,3 +1,5 @@
 .yalc
 yalc.lock
 .DS_Store
+*.tgz
+.DS_Store
