@@ -1,15 +1,15 @@
 {
-  "name": "@babylon/tota11y2",
+  "name": "tota11y",
   "version": "1.0.0",
   "description": "An accessibility visualization toolkit",
   "main": "dist/tota11y.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/babylonhealth/Tota11y"
+    "url": "git+https://github.com/babylonhealth/Tota11y.git"
   },
   "author": "Jordan Scales <scalesjordan@gmail.com>",
   "contributors": [
-    "Jeff Yates <jeff.yates@alumni.manchester.ac.uk"
+    "Jeff Yates"
   ],
   "homepage": "hhttps://github.com/babylonhealth/Tota11y",
   "devDependencies": {
@@ -51,5 +51,17 @@
     "prepublishOnly": "node ./utils/pre-publish-checks.js && git diff --stat --exit-code HEAD && npm test && npm run build:prod"
   },
   "license": "MIT AND MPL-2.0 AND Apache-2.0",
-  "dependencies": {}
+  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/babylonhealth/Tota11y/issues"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "keywords": [
+    "accessibility",
+    "visualisation",
+    "utility"
+  ]
 }
