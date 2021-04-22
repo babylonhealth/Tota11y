@@ -47,7 +47,7 @@
     "build:dev": "webpack --config webpack.config.babel.js -d --devtool hidden",
     "lint": "eslint index.js plugins test utils",
     "start": "webpack-dev-server --config webpack.config.babel.js --hot --inline",
-    "prepublishOnly": "node ./utils/pre-publish-checks.js && git diff --stat --exit-code HEAD && npm run build:prod"
+    "prepublishOnly": "git diff --stat --exit-code HEAD && npm run build:prod"
   },
   "license": "MIT AND MPL-2.0 AND Apache-2.0",
   "dependencies": {},
