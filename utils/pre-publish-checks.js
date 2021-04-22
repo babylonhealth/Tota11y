@@ -13,9 +13,9 @@ const checkPublishConfig = (publishConfig) => {
 };
 
 const checkNpmUser = (currentUser) => {
-    if (currentUser.trim() !== "khanacademy") {
+    if (currentUser.trim() !== "brucelawson") {
         console.error(
-            "ERROR: You are not logged in to NPM as \"khanacademy\". " +
+            "ERROR: You are not logged in to NPM as \"brucelawson\". " +
                 "Run \"npm login\" and use the password from Keeper: " +
                 "NPM Open Source (https://npmjs.org)"
         );

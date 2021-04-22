@@ -1,15 +1,15 @@
 {
-  "name": "@babylon/tota11y",
+  "name": "tota11y",
   "version": "1.0.0",
   "description": "An accessibility visualization toolkit",
   "main": "dist/tota11y.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/babylonhealth/Tota11y"
+    "url": "git+https://github.com/babylonhealth/Tota11y.git"
   },
   "author": "Jordan Scales <scalesjordan@gmail.com>",
   "contributors": [
-    "Jeff Yates <jeff.yates@alumni.manchester.ac.uk"
+    "Jeff Yates"
   ],
   "homepage": "hhttps://github.com/babylonhealth/Tota11y",
   "devDependencies": {
@@ -46,10 +46,21 @@
     "build:prod": "NODE_ENV=production webpack --config webpack.config.babel.js",
     "build:dev": "webpack --config webpack.config.babel.js -d --devtool hidden",
     "lint": "eslint index.js plugins test utils",
-    "test": "mocha --require test/babel-hook test/*.js",
     "start": "webpack-dev-server --config webpack.config.babel.js --hot --inline",
-    "prepublishOnly": "node ./utils/pre-publish-checks.js && git diff --stat --exit-code HEAD && npm test && npm run build:prod"
+    "prepublishOnly": "git diff --stat --exit-code HEAD && npm run build:prod"
   },
   "license": "MIT AND MPL-2.0 AND Apache-2.0",
-  "dependencies": {}
+  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/babylonhealth/Tota11y/issues"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "keywords": [
+    "accessibility",
+    "visualisation",
+    "utility"
+  ]
 }
