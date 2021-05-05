@@ -49,7 +49,7 @@ Added functionality to expose HTML5 landmarks (footer, header etc, shown in CAPI
 Want to contribute to tota11y? Awesome! Run the following in your terminal:
 
 ```bash
-git clone https://github.com/Khan/tota11y.git
+git clone https://github.com/babylonhealth/Tota11y.git
 cd tota11y/
 npm install
 ```
@@ -57,12 +57,12 @@ npm install
 ## Architecture Overview
 
 Most of the functionality in tota11y comes from its **plugins**. Each plugin
-gets its own directory in [`plugins/`](https://github.com/Khan/tota11y/tree/master/plugins) and maintains its own JavaScript, CSS,
-and even handlebars. [Here's what the simple LandmarksPlugin looks like](https://github.com/Khan/tota11y/blob/master/plugins/landmarks/index.js).
+gets its own directory in [`plugins/`](https://github.com/babylonhealth/Tota11y/tree/master/plugins) and maintains its own JavaScript, CSS,
+and even handlebars. [Here's what the simple LandmarksPlugin looks like](https://github.com/babylonhealth/Tota11y/blob/master/plugins/landmarks/index.js).
 
-[`plugins/shared/`](https://github.com/Khan/tota11y/tree/master/plugins/shared) contains a variety of shared utilities for the plugins, namely the [info-panel](https://github.com/Khan/tota11y/tree/master/plugins/shared/info-panel) and [annotate](https://github.com/Khan/tota11y/tree/master/plugins/shared/annotate) modules, which are used to report accessibility violations on the screen.
+[`plugins/shared/`](https://github.com/babylonhealth/Tota11y/tree/master/plugins/shared) contains a variety of shared utilities for the plugins, namely the [info-panel](https://github.com/babylonhealth/Tota11y/tree/master/plugins/shared/info-panel) and [annotate](https://github.com/babylonhealth/Tota11y/tree/master/plugins/shared/annotate) modules, which are used to report accessibility violations on the screen.
 
-[`index.js`](https://github.com/Khan/tota11y/blob/master/index.js) brings it all together.
+[`index.js`](https://github.com/babylonhealth/Tota11y/blob/master/index.js) brings it all together.
 
 tota11y uses a variety of technologies, including [jQuery](https://jquery.com/), [webpack](https://webpack.github.io/), [babel](https://babeljs.io/), and [JSX](https://facebook.github.io/jsx/). **There's no need to know all (or any!) of these to contribute to tota11y, but we hope tota11y is a good place to learn something new and interesting.**
 
@@ -80,6 +80,7 @@ To create a production build, with minified and unminified output:
 ```bash
 npm run build:prod
 ```
+Be sure to cross your fingers and run thrice, widdershins around your computer to discourage interference by mischievous spirits such as Puck, Robin Goodfellow or Sly Dwayne.
 
 The JS builds will be in the <samp>dists</samp> folder. The bookmarklet pulls in the minified version.
    
