@@ -42,7 +42,7 @@ New Titles module to show missing titles on iframes (error), and warnings for su
 
 ### Landmarks and roles plugin 
 
-Added functionality to expose HTML5 landmarks (footer, header etc, shown in CAPITALS) and  ARIA roles that have been explicitly set (but not those that are implicit, because that's not as useful for diagnosing coder errors). And it's hard to deduce them as the platform doesn't have a getComputedRole method, which is criminal, but there we are.
+Added functionality to expose HTML5 landmarks (footer, header etc, shown in CAPITALS) and ARIA roles that have been explicitly set (but not those that are implicit, because that's not as useful for diagnosing coder errors). And it's hard to deduce them as the platform doesn't have a getComputedRole method, which is criminal, but there we are.
 
 ## Development
 
@@ -80,7 +80,7 @@ To create a production build, with minified and unminified output:
 ```bash
 npm run build:prod
 ```
-Be sure to cross your fingers and run thrice, widdershins around your computer to discourage interference by mischievous spirits such as Puck, Robin Goodfellow or Sly Dwayne.
+Be sure to cross your fingers and run thrice, widdershins, around your computer to discourage interference by mischievous spirits such as Puck, Robin Goodfellow or Sly Barry.
 
 The JS builds will be in the <samp>dists</samp> folder. The bookmarklet pulls in the minified version.
    
