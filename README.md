@@ -9,7 +9,7 @@ This is a fork of the original [Tota11y from Khan Academy](http://khan.github.io
 ## New Features
 
 ### UI changes
-- When hovering over a tota11y label, bump upits z-index in case it is obscured by a nearby label in busy pages.
+- When hovering over a tota11y label, bump up its z-index in case it is obscured by a nearby label in busy pages.
 - Make Tota11y responsive when screen is zoomed to 200%
 - Split out modules into most-common ones for content editors, and those for 'developers' (e.g. people with control over HTML blocks and form fields)
 - Add links to Babylon DNA guidance where applicable
@@ -82,7 +82,7 @@ npm run build:prod
 ```
 Be sure to cross your fingers and run thrice, widdershins, around your computer to discourage interference by mischievous spirits such as Puck, Robin Goodfellow or Sly Barry.
 
-The JS builds will be in the <samp>dists</samp> folder. The bookmarklet pulls in the minified version.
+The JS builds will be in the <samp>dist</samp> folder. The bookmarklet pulls in the minified version.
    
 ## Community Examples
 Want to integrate tota11y into your site, but don't know where to start? Here are some examples from the tota11y community to inspire you:
