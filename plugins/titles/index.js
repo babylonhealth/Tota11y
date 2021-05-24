@@ -13,7 +13,7 @@ class TitlesPlugin extends Plugin {
   }
 
   getDescription() {
-    return "Labels redundant and missing title attributes";
+    return "Labels superfluous and missing title attributes";
   }
 
   run() {
