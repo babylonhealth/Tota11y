@@ -7,7 +7,7 @@
 let AltTextPlugin = require("./alt-text");
 let ContrastPlugin = require("./contrast");
 let HeadingsPlugin = require("./headings");
-//let LabelsPlugin = require("./labels");
+let LabelsPlugin = require("./labels");
 let LandmarksPlugin = require("./landmarks");
 let TitlesPlugin = require("./titles");
 let LinkTextPlugin = require("./link-text");
@@ -19,12 +19,12 @@ module.exports = {
         new HeadingsPlugin(),
         new ContrastPlugin(),
         new LinkTextPlugin(),
-				new AltTextPlugin(),
-				new EmptyElementsPlugin()
+        new LabelsPlugin(),
+        new AltTextPlugin(),
+        new EmptyElementsPlugin()
     ],
 
     experimental: [
-	//	new LabelsPlugin(),
 		new LandmarksPlugin(),
 		new TitlesPlugin(),
 		new A11yTextWand()
