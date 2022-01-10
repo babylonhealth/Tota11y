@@ -1,6 +1,6 @@
 /*!
- * Date: 2022-01-07
- * Tota11y 2 v1.0.0
+ * Date: 2022-01-10
+ * Tota11y 2 v1.1.0
  * https://github.com/babylonhealth/Tota11y
  * 
  * Includes below, and elements of Firefox accessibility-developer-tools
@@ -14,7 +14,7 @@
  * Contributions made in this fork are licensed under the Apache License, Version 2
  * 
  * 
- * tota11y v1.0.0
+ * tota11y v1.1.0
  * http://khan.github.io/tota11y
  * 
  * Includes Accessibility Developer Tools
