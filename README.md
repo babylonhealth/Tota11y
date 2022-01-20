@@ -1,8 +1,6 @@
 # An accessibility visualization toolkit.
 
-Drag this link to your browser's bookmarks bar.
-
-<a class="bookmarklet" href="javascript:(function(){var%20tota11y=document.createElement('SCRIPT');tota11y.type='text/javascript';tota11y.src='https://khan.github.io/tota11y/dist/tota11y.min.js';document.getElementsByTagName('head')[0].appendChild(tota11y);})();" onclick="javascript:return false;">tota11y</a>
+Instructions and bookmarklet at https://brucelawson.github.io/tota11y/instructions 
 
 This is a fork of the original [Tota11y from Khan Academy](http://khan.github.io/tota11y/), by Babylon Health. Inspired by [why Khan Academy built tota11y](http://engineering.khanacademy.org/posts/tota11y.htm), some of the functionality has been updated or tweaked to reflect the needs of Babylon's web developers.
 
