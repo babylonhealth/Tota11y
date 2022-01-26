@@ -13,6 +13,7 @@ let TitlesPlugin = require("./titles");
 let LinkTextPlugin = require("./link-text");
 let A11yTextWand = require("./a11y-text-wand");
 let EmptyElementsPlugin = require("./empty");
+let FocusPlugin = require("./focus");
 
 module.exports = {
     default: [
@@ -21,7 +22,8 @@ module.exports = {
         new LinkTextPlugin(),
         new LabelsPlugin(),
         new AltTextPlugin(),
-        new EmptyElementsPlugin()
+        new EmptyElementsPlugin(),
+        new FocusPlugin()
     ],
 
     experimental: [
