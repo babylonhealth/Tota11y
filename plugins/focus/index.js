@@ -8,9 +8,7 @@
 
 let $ = require('jquery')
 let Plugin = require('../base')
-
-let outlineItemTemplate = require('./index.js')
-require('./index.js')
+let annotate = require("../shared/annotate")("focus");
 
 class FocusPlugin extends Plugin {
   getTitle () {
@@ -24,9 +22,11 @@ class FocusPlugin extends Plugin {
   }
   run () {
     var results = getTabbablesInOrder(document.querySelector('body'))
+    let tota11y_dashboard = document.getElementById("tota11y-toolbar");
     results.forEach(function (element, index) {
-      $(this).addClass('tota11y-focus') // so we can find them again
-      annotate.errorLabel($(this), 'Empty!', $(this).prop('tagName'))
+      if (tota11y_dashboard.contains(element)) return; // exclude the tota11y dashboard itself!
+      $(element).addClass('tota11y-focus') // so we can find them again
+      annotate.errorLabel($(element), 'Tab index ' + index, $(element).prop('tagName'))
     })
 
     function getTabbablesInOrder (within) {
