@@ -12,21 +12,25 @@ let annotate = require("../shared/annotate")("focus");
 
 class FocusPlugin extends Plugin {
   getTitle () {
-    return 'Keyboard focus order'
+    return 'Keyboard focus order [BETA]'
   }
 
   getDescription () {
-    return `
-             wiggle wiggle
-         `
+    return `(beta: iframes need manual checks)`
   }
   run () {
     var results = getTabbablesInOrder(document.querySelector('body'))
     let tota11y_dashboard = document.getElementById("tota11y-toolbar");
     results.forEach(function (element, index) {
       if (tota11y_dashboard.contains(element)) return; // exclude the tota11y dashboard itself!
-      $(element).addClass('tota11y-focus') // so we can find them again
-      annotate.errorLabel($(element), 'Tab index ' + index, $(element).prop('tagName'))
+      $(element).addClass("tota11y-focus tota11y-label-success")
+      annotate.label($(element), 'Tab stop ' + index, $(element).prop('tagName'));
+
+      $("iframe").each(function () {
+        $(this).append("Check manually!");
+        $(this).addClass("tota11y-empty"); // so we can find them again
+        annotate.errorLabel($(this),"iframe - manual check required. (Beta)");
+      });    
     })
 
     function getTabbablesInOrder (within) {
@@ -36,7 +40,7 @@ class FocusPlugin extends Plugin {
                elements have tabindex 0, which means "tab to me in DOM order")
                Note that we have to get all tabbables in the whole document (because tabindex
                is a document-wide number) and then filter at the end to those which are
-               descendants of "within".
+               descendants of "within". By Stuart Langridge of kryogenix.org, il miglior fabbro.
             */
       var els = Array.prototype.slice
         .call(
