@@ -13,7 +13,7 @@ class LandmarksPlugin extends Plugin {
   }
 
   getDescription() {
-    return "Labels set ARIA roles, outlines HTML landmarks";
+    return "Labels defined ARIA roles, outlines HTML landmarks";
   }
 
   run() {
