@@ -23,7 +23,7 @@ class FocusPlugin extends Plugin {
     let tota11y_dashboard = document.getElementById("tota11y-toolbar");
     results.forEach(function (element, index) {
       if (tota11y_dashboard.contains(element)) return; // exclude the tota11y dashboard itself!
-      $(element).addClass("tota11y-focus tota11y-label-success")
+      $(element).addClass("tota11y-focus")
       annotate.label($(element), 'Tab stop ' + index, $(element).prop('tagName'));
 
       $("iframe").each(function () {
