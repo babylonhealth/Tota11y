@@ -48,7 +48,7 @@ This plugin exposes elements that naturally take focus, or have a tabindex appli
 
 Guess at the tab order (not guaranteed due to (https://html.spec.whatwg.org/multipage/interaction.html#attr-tabindex)[under-specification of tabindex], different browser behaviours, and also clickable things in iframes). Verify any weirdness by simply advancing through the page with the 'tab' key.
 
-Thanks to flame-haired FOSS Adonis [https://kryogenix.org/](Stuart Langridge) for help with some jQuery.
+Thanks to flame-haired FOSS Adonis (https://kryogenix.org/)[Stuart Langridge] for help with some jQuery.
 
 ## Development
 
