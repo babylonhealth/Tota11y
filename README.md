@@ -42,9 +42,17 @@ New Titles module to show missing titles on iframes (error), and warnings for su
 
 Added functionality to expose HTML5 landmarks (footer, header etc, shown in CAPITALS) and ARIA roles that have been explicitly set (but not those that are implicit, because that's not as useful for diagnosing coder errors). And it's hard to deduce them as the platform doesn't have a getComputedRole method, which is criminal, but there we are.
 
+## v 1.3.0 adds Focus order plugin
+
+This plugin exposes elements that naturally take focus, or have a tabindex applied to make them focussable. Basically, if you have a pseudo-button or similar control made out of divs and JS and it is not highlighted, you have a problem.
+
+Guess at the tab order (not guaranteed due to (https://html.spec.whatwg.org/multipage/interaction.html#attr-tabindex)[under-specification of tabindex], different browser behaviours, and also clickable things in iframes). Verify any weirdness by simply advancing through the page with the 'tab' key.
+
+Thanks to flame-haired FOSS Adonis [https://kryogenix.org/](Stuart Langridge) for help with some jQuery.
+
 ## Development
 
-Want to contribute to tota11y? Awesome! Run the following in your terminal:
+Want to contribute to tota11y? Spiffing! Run the following in your terminal:
 
 ```bash
 git clone https://github.com/babylonhealth/Tota11y.git
