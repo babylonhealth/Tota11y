@@ -12,11 +12,11 @@ let annotate = require("../shared/annotate")("focus");
 
 class FocusPlugin extends Plugin {
   getTitle () {
-    return 'Keyboard focus order [BETA]'
+    return 'Keyboard focus order'
   }
 
   getDescription () {
-    return `(beta: iframes need manual checks)`
+    return `Check all your clickable things can be reached by keyboard`
   }
   run () {
     var results = getTabbablesInOrder(document.querySelector('body'))
@@ -29,7 +29,7 @@ class FocusPlugin extends Plugin {
       $("iframe").each(function () {
         $(this).append("Check manually!");
         $(this).addClass("tota11y-empty"); // so we can find them again
-        annotate.errorLabel($(this),"iframe - manual check required. (Beta)");
+        annotate.errorLabel($(this),"iframe - manual check required.");
       });    
     })
 

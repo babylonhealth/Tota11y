@@ -22,11 +22,11 @@ module.exports = {
         new LinkTextPlugin(),
         new LabelsPlugin(),
         new AltTextPlugin(),
-        new EmptyElementsPlugin(),
-        new FocusPlugin()
+        new EmptyElementsPlugin()
     ],
 
     experimental: [
+    new FocusPlugin(),
 		new LandmarksPlugin(),
 		new TitlesPlugin(),
 		new A11yTextWand()
