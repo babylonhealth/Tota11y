@@ -1,6 +1,6 @@
 /*!
- * Date: 2022-01-28
- * Tota11y 2 v1.3.0
+ * Date: 2022-01-31
+ * Tota11y 2 v1.3.1
  * https://github.com/babylonhealth/Tota11y
  * 
  * Includes below, and elements of Firefox accessibility-developer-tools
@@ -14,7 +14,7 @@
  * Contributions made in this fork are licensed under the Apache License, Version 2
  * 
  * 
- * tota11y v1.3.0
+ * tota11y v1.3.1
  * http://khan.github.io/tota11y
  * 
  * Includes Accessibility Developer Tools
@@ -12862,7 +12862,7 @@ if(false) {}
 
 exports = module.exports = __webpack_require__(4)(false);
 // Module
-exports.push([module.i, ".tota11y-dark-color-scheme {\n  background-color: white !important;\n  color: black !important;\n  /* ??? */\n}\n.tota11y-no-select {\n  -webkit-user-select: none !important;\n     -moz-user-select: none !important;\n      -ms-user-select: none !important;\n          user-select: none !important;\n}\n/**\n * Base styles for tota11y to make sure things look consistent under\n * reasonable circumstances.\n */\n@font-face {\n  font-family: 'visuelt' !important;\n  src: url('https://www.babylonhealth.com/assets/fonts/visuelt-regular.woff2') format('woff2'), url('https://www.babylonhealth.com/assets/fonts/visuelt-regular.woff') format('woff') !important;\n}\n.tota11y,\n.tota11y * {\n  border: none !important;\n  background-color: inherit !important;\n  box-sizing: border-box !important;\n  color: black !important;\n  font-family: visuelt, Arial, Helvetica, sans-serif !important;\n  font-size: 14px !important;\n  font-style: normal !important;\n  font-weight: 400 !important;\n  line-height: 1.35 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  text-align: left !important;\n  text-shadow: none !important;\n  text-transform: none !important;\n}\n.tota11y * {\n  height: auto !important;\n  width: auto !important;\n}\n.tota11y strong {\n  font-weight: bold !important;\n}\n.tota11y pre,\n.tota11y code {\n  border: none !important;\n  border-radius: 0 !important;\n  color: inherit !important;\n  font-family: monospace !important;\n  font-size: inherit !important;\n  line-height: inherit !important;\n}\n.tota11y pre {\n  padding: 5px 10px !important;\n  margin: 0 0 10px !important;\n  overflow-x: scroll !important;\n}\n.tota11y code {\n  border-radius: 2px !important;\n  display: inline !important;\n  padding: 1px !important;\n}\n.tota11y i,\n.tota11y em {\n  font-style: italic !important;\n}\n.tota11y p {\n  margin: 0 0 10px !important;\n}\n.tota11y a {\n  background-color: inherit !important;\n  color: #400099 !important;\n  text-decoration: underline !important;\n}\n.tota11y a:hover,\n.tota11y a:focus {\n  text-decoration: none !important;\n}\n.tota11y a:visited {\n  text-decoration: underline !important;\n}\n.totally summary {\n  cursor: pointer !important;\n  font-size: 1.3em !important;\n  color: green !important;\n}\n.tota11y-toolbar {\n  background-color: white !important;\n  color: black !important;\n  /* ??? */\n  position: fixed !important;\n  top: auto !important;\n  right: auto !important;\n  bottom: 0 !important;\n  left: 10px !important;\n  border: 2px solid #400099 !important;\n  border-radius: 8px 8px 0px 0px !important;\n  /* make it scrollable vertically at 200% zoom */\n  overflow: auto !important;\n  max-height: 95% !important;\n  /* end hack */\n  z-index: 9998 !important;\n}\n.tota11y-toolbar-toggle {\n  background-color: #400099 !important;\n  display: block !important;\n  padding: 7px !important;\n  width: 100% !important;\n  border: 2px solid #400099 !important;\n  border-radius: 8px 8px 0px 0px !important;\n}\n.tota11y-toolbar-logo {\n  height: 25px !important;\n  margin: 0 auto !important;\n  text-align: center !important;\n  width: 35px !important;\n}\n.tota11y-toolbar-logo svg {\n  height: 25px !important;\n}\n.tota11y-toolbar-body {\n  display: none !important;\n}\n.tota11y-toolbar.tota11y-expanded .tota11y-toolbar-body {\n  display: block !important;\n}\n.tota11y-sr-only {\n  border: 0 !important;\n  clip: rect(0, 0, 0, 0) !important;\n  height: 1px !important;\n  margin: -1px !important;\n  overflow: hidden !important;\n  padding: 0 !important;\n  position: absolute !important;\n  width: 1px !important;\n}\n.tota11y-info {\n  border: 2px solid #400099 !important;\n  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.04), 6px 4px 11px rgba(0, 0, 0, 0.2) !important;\n  border-radius: 8px 8px 0px 0px !important;\n  background-color: white !important;\n}\n#tota11y-toolbar:not([aria-expanded=\"true\"]) {\n  border: 2px solid #ffffff !important;\n  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.04), 6px 4px 11px rgba(0, 0, 0, 0.2) !important;\n}\n/* over-rides n shizz */\n.tota11y-label:hover {\n  outline: 1px red solid !important;\n  z-index: 9999 !important;\n}\n.tota11y-expanded .tota11y-toolbar-toggle {\n  border-radius: 0 !important;\n}\nli.tota11y-plugin {\n  border-bottom: none !important;\n}\n.tota11y-info-section.active {\n  background-color: #f3f6f9 !important;\n  border-radius: 4px !important;\n}\n.tota11y-info-error-chevron {\n  color: #400099 !important;\n  font-size: large !important;\n}\n", ""]);
+exports.push([module.i, ".tota11y-dark-color-scheme {\n  background-color: white !important;\n  color: black !important;\n  /* ??? */\n}\n.tota11y-no-select {\n  -webkit-user-select: none !important;\n     -moz-user-select: none !important;\n      -ms-user-select: none !important;\n          user-select: none !important;\n}\n/**\n * Base styles for tota11y to make sure things look consistent under\n * reasonable circumstances.\n */\n@font-face {\n  font-family: 'visuelt' !important;\n  src: url('https://www.babylonhealth.com/assets/fonts/visuelt-regular.woff2') format('woff2'), url('https://www.babylonhealth.com/assets/fonts/visuelt-regular.woff') format('woff') !important;\n}\n.tota11y,\n.tota11y * {\n  border: none !important;\n  background-color: inherit !important;\n  box-sizing: border-box !important;\n  color: black !important;\n  font-family: visuelt, Arial, Helvetica, sans-serif !important;\n  font-size: 14px !important;\n  font-style: normal !important;\n  font-weight: 400 !important;\n  line-height: 1.35 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  text-align: left !important;\n  text-shadow: none !important;\n  text-transform: none !important;\n}\n.tota11y * {\n  height: auto !important;\n  width: auto !important;\n}\n.tota11y strong {\n  font-weight: bold !important;\n}\n.tota11y pre,\n.tota11y code {\n  border: none !important;\n  border-radius: 0 !important;\n  color: inherit !important;\n  font-family: monospace !important;\n  font-size: inherit !important;\n  line-height: inherit !important;\n}\n.tota11y pre {\n  padding: 5px 10px !important;\n  margin: 0 0 10px !important;\n  overflow-x: scroll !important;\n}\n.tota11y code {\n  border-radius: 2px !important;\n  display: inline !important;\n  padding: 1px !important;\n}\n.tota11y i,\n.tota11y em {\n  font-style: italic !important;\n}\n.tota11y p {\n  margin: 0 0 10px !important;\n}\n.tota11y a {\n  background-color: inherit !important;\n  color: #400099 !important;\n  text-decoration: underline !important;\n}\n.tota11y a:hover,\n.tota11y a:focus {\n  text-decoration: none !important;\n}\n.tota11y a:visited {\n  text-decoration: underline !important;\n}\n.tota11y-opened {\n  outline: 2px solid green !important;\n}\n.tota11y-toolbar {\n  background-color: white !important;\n  color: black !important;\n  /* ??? */\n  position: fixed !important;\n  top: auto !important;\n  right: auto !important;\n  bottom: 0 !important;\n  left: 10px !important;\n  border: 2px solid #400099 !important;\n  border-radius: 8px 8px 0px 0px !important;\n  /* make it scrollable vertically at 200% zoom */\n  overflow: auto !important;\n  max-height: 95% !important;\n  /* end hack */\n  z-index: 9998 !important;\n}\n.tota11y-toolbar-toggle {\n  background-color: #400099 !important;\n  display: block !important;\n  padding: 7px !important;\n  width: 100% !important;\n  border: 2px solid #400099 !important;\n  border-radius: 8px 8px 0px 0px !important;\n}\n.tota11y-toolbar-logo {\n  height: 25px !important;\n  margin: 0 auto !important;\n  text-align: center !important;\n  width: 35px !important;\n}\n.tota11y-toolbar-logo svg {\n  height: 25px !important;\n}\n.tota11y-toolbar-body {\n  display: none !important;\n}\n.tota11y-toolbar.tota11y-expanded .tota11y-toolbar-body {\n  display: block !important;\n}\n.tota11y-sr-only {\n  border: 0 !important;\n  clip: rect(0, 0, 0, 0) !important;\n  height: 1px !important;\n  margin: -1px !important;\n  overflow: hidden !important;\n  padding: 0 !important;\n  position: absolute !important;\n  width: 1px !important;\n}\n.tota11y-info {\n  border: 2px solid #400099 !important;\n  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.04), 6px 4px 11px rgba(0, 0, 0, 0.2) !important;\n  border-radius: 8px 8px 0px 0px !important;\n  background-color: white !important;\n}\n#tota11y-toolbar:not([aria-expanded=\"true\"]) {\n  border: 2px solid #ffffff !important;\n  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.04), 6px 4px 11px rgba(0, 0, 0, 0.2) !important;\n}\n/* over-rides n shizz */\n.tota11y-label:hover {\n  outline: 1px red solid !important;\n  z-index: 9999 !important;\n}\n.tota11y-expanded .tota11y-toolbar-toggle {\n  border-radius: 0 !important;\n}\nli.tota11y-plugin {\n  border-bottom: none !important;\n}\n.tota11y-info-section.active {\n  background-color: #f3f6f9 !important;\n  border-radius: 4px !important;\n}\n.tota11y-info-error-chevron {\n  color: #400099 !important;\n  font-size: large !important;\n}\n", ""]);
 
 
 
@@ -15948,6 +15948,11 @@ var FocusPlugin = function (_Plugin) {
   }, {
     key: 'run',
     value: function run() {
+      // open any <details> elements in case there are tabbables inside. Need to add class Tota11y opened
+      Array.from(document.querySelectorAll("details")).forEach(function (x) {
+        x.setAttribute("open", "open");
+        x.classList.add("tota11y-opened");
+      });
       var results = getTabbablesInOrder(document.querySelector('body'));
       var tota11y_dashboard = document.getElementById("tota11y-toolbar");
       results.forEach(function (element, index) {
@@ -15971,7 +15976,7 @@ var FocusPlugin = function (_Plugin) {
                  is a document-wide number) and then filter at the end to those which are
                  descendants of "within". By Stuart Langridge of kryogenix.org, il miglior fabbro.
               */
-        var els = Array.prototype.slice.call(document.querySelectorAll('input,select,textarea,button,a,[tabindex]')).map(function (el) {
+        var els = Array.prototype.slice.call(document.querySelectorAll('input,select,textarea,button,a,[tabindex], details')).map(function (el) {
           if (el.hasAttribute('tabindex')) {
             var val = parseInt(el.getAttribute('tabindex'), 10);
             if (isNaN(val) || val < 0) return [el, -1]; // invalid tabindex so it's not tabbable at all
@@ -16017,7 +16022,10 @@ var FocusPlugin = function (_Plugin) {
     value: function cleanup() {
       annotate.removeAll();
       $('.tota11y-focus').each(function () {
-        $(this).empty();
+        $(this).removeClass("tota11y-focus");
+      });
+      $('.tota11y-opened').each(function () {
+        $(this).removeAttr("open").removeClass("tota11y-opened");
       });
     }
   }]);
