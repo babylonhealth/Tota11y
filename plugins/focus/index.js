@@ -19,6 +19,7 @@ class FocusPlugin extends Plugin {
     return `Check all your clickable things can be reached by keyboard`
   }
   run () {
+    document.querySelectorAll("details").setAttribute("open", "");
     var results = getTabbablesInOrder(document.querySelector('body'))
     let tota11y_dashboard = document.getElementById("tota11y-toolbar");
     results.forEach(function (element, index) {
@@ -44,7 +45,7 @@ class FocusPlugin extends Plugin {
             */
       var els = Array.prototype.slice
         .call(
-          document.querySelectorAll('input,select,textarea,button,a,[tabindex]')
+          document.querySelectorAll('input,select,textarea,button,a,[tabindex], details')
         )
         .map(function (el) {
           if (el.hasAttribute('tabindex')) {
