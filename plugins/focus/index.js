@@ -19,7 +19,11 @@ class FocusPlugin extends Plugin {
     return `Check all your clickable things can be reached by keyboard`
   }
   run () {
-    document.querySelectorAll("details").setAttribute("open", "");
+    // open any <details> elements in case there are tabbables inside. Need to add class Tota11y opened
+    Array.from(document.querySelectorAll("details")).forEach(x => {
+      x.setAttribute("open", "open");
+      x.classList.add("tota11y-opened");
+    })
     var results = getTabbablesInOrder(document.querySelector('body'))
     let tota11y_dashboard = document.getElementById("tota11y-toolbar");
     results.forEach(function (element, index) {
@@ -94,7 +98,10 @@ class FocusPlugin extends Plugin {
   cleanup () {
     annotate.removeAll()
     $('.tota11y-focus').each(function () {
-      $(this).empty()
+      $(this).removeClass("tota11y-focus")
+    })
+    $('.tota11y-opened').each(function () {
+      $(this).removeAttr("open").removeClass("tota11y-opened")
     })
   }
 }
