@@ -76,7 +76,7 @@ class Toolbar {
             <a 
               target='_blank'
               rel='noopener'
-              href='https://brucelawson.github.io/tota11y/instructions'
+              href='https://tota11y.babylontech.co.uk/'
             >Instructions
             </a>
 
