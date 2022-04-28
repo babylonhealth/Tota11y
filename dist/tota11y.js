@@ -1,5 +1,5 @@
 /*!
- * Date: 2022-01-31
+ * Date: 2022-04-28
  * Tota11y 2 v1.3.1
  * https://github.com/babylonhealth/Tota11y
  * 
@@ -12769,7 +12769,7 @@ var Toolbar = function () {
             {
               target: '_blank',
               rel: 'noopener',
-              href: 'https://brucelawson.github.io/tota11y/instructions'
+              href: 'https://tota11y.babylontech.co.uk/'
             },
             'Instructions'
           )
@@ -15778,7 +15778,7 @@ var A11yTextWand = function (_Plugin) {
   }, {
     key: "getDescription",
     value: function getDescription() {
-      return "Hover over elements (e.g. form fields) to see accessible names & descriptions passed to assistive technology";
+      return "Hover over elements (e.g. form fields) to see accessible names & descriptions passed to assistive technology (BETA!)";
     }
   }, {
     key: "run",
