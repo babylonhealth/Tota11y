@@ -13,7 +13,7 @@ class A11yTextWand extends Plugin {
   }
 
   getDescription() {
-    return "Hover over elements (e.g. form fields) to see accessible names & descriptions passed to assistive technology";
+    return "Hover over elements (e.g. form fields) to see accessible names & descriptions passed to assistive technology (BETA!)";
   }
 
   run() {
