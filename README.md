@@ -56,7 +56,7 @@ Want to contribute to tota11y? Spiffing! Run the following in your terminal:
 
 ```bash
 git clone https://github.com/babylonhealth/Tota11y.git
-cd tota11y/
+cd Tota11y/
 npm install
 ```
 
