@@ -1,5 +1,5 @@
 /*!
- * Date: 2022-06-27
+ * Date: 2022-07-04
  * Tota11y 2 v1.3.1
  * https://github.com/babylonhealth/Tota11y
  * 
@@ -15630,7 +15630,7 @@ var LinkTextPlugin = function (_Plugin) {
                 return false;
             }
 
-            var stopWords = ["click", "tap", "go", "here", "learn", "more", "this", "page", "link", "about"];
+            var stopWords = ["click", "tap", "go", "here", "learn", "more", "this", "page", "link"];
             // Generate a regex to match each of the stopWords
             var stopWordsRE = new RegExp("\\b(" + stopWords.join("|") + ")\\b", "ig");
 
