@@ -1,5 +1,5 @@
 /*!
- * Date: 2022-04-28
+ * Date: 2022-06-27
  * Tota11y 2 v1.3.1
  * https://github.com/babylonhealth/Tota11y
  * 
@@ -15958,7 +15958,7 @@ var FocusPlugin = function (_Plugin) {
       results.forEach(function (element, index) {
         if (tota11y_dashboard.contains(element)) return; // exclude the tota11y dashboard itself!
         $(element).addClass("tota11y-focus");
-        annotate.label($(element), 'Tab stop ' + index, $(element).prop('tagName'));
+        annotate.label($(element), 'Tab ' + index, $(element).prop('tagName'));
 
         $("iframe").each(function () {
           $(this).append("Check manually!");
